@@ -8,6 +8,8 @@ import { ProductComponent } from './product-list/product/product.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductCreateComponent } from './product-create/product-create.component'
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { HomeComponent } from './home/home.component';
     ProductListComponent,
     ProductComponent,
     CategoryListComponent,
-    HomeComponent
+    HomeComponent,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
